@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Toastie_The_Toaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfG-CS-ehh">
+                                <rect key="frame" x="80" y="138" width="215" height="75"/>
+                                <color key="backgroundColor" red="0.63229881458195902" green="0.47291407139450958" blue="0.90038050518134716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="GRJ-51-njB"/>
+                                    <constraint firstAttribute="width" constant="215" id="nqy-8X-VQt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="15" maxX="20" maxY="15"/>
+                                <state key="normal" title="Make Toast">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hY2-kd-zAs">
+                                <rect key="frame" x="80" y="263" width="215" height="75"/>
+                                <color key="backgroundColor" red="0.63229881460000004" green="0.47291407140000002" blue="0.90038050520000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="4gN-9g-pNX"/>
+                                    <constraint firstAttribute="width" constant="215" id="c1q-lb-XSA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="15" maxX="20" maxY="15"/>
+                                <state key="normal" title="Set Alarm">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Toastie The Toaster" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhL-my-19w">
+                                <rect key="frame" x="18" y="44" width="338" height="43"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="36"/>
+                                <color key="textColor" red="0.25123665527470906" green="0.18790696232453696" blue="0.35775582901554404" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hY2-kd-zAs" firstAttribute="centerX" secondItem="pfG-CS-ehh" secondAttribute="centerX" id="Okm-2y-och"/>
+                            <constraint firstItem="pfG-CS-ehh" firstAttribute="top" secondItem="DhL-my-19w" secondAttribute="bottom" constant="50" id="YlG-rm-58j"/>
+                            <constraint firstItem="hY2-kd-zAs" firstAttribute="top" secondItem="pfG-CS-ehh" secondAttribute="bottom" constant="50" id="bbM-db-7HT"/>
+                            <constraint firstItem="DhL-my-19w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="jtk-SC-2v3"/>
+                            <constraint firstItem="DhL-my-19w" firstAttribute="centerX" secondItem="pfG-CS-ehh" secondAttribute="centerX" id="wcX-RT-GaP"/>
+                            <constraint firstItem="pfG-CS-ehh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zRj-py-S0M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="makeToastBtn" destination="pfG-CS-ehh" id="6Re-FV-W71"/>
+                        <outlet property="setAlarmBtn" destination="hY2-kd-zAs" id="iCv-wQ-DwB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
