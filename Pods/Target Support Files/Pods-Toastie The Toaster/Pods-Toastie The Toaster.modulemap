@@ -1,0 +1,6 @@
+framework module Pods_Toastie_The_Toaster {
+  umbrella header "Pods-Toastie The Toaster-umbrella.h"
+
+  export *
+  module * { export * }
+}

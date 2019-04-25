@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F3EE4F4A3B022CC9D08074C /* Pods_Toastie_The_Toaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96994EA38D6CEC8A9452E5DF /* Pods_Toastie_The_Toaster.framework */; };
+		4072CDDF22720048007F40B6 /* toastieTheToaster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4072CDDE22720048007F40B6 /* toastieTheToaster.jpg */; };
 		40E420AA22445CF800A9DF61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E420A922445CF800A9DF61 /* AppDelegate.swift */; };
 		40E420AC22445CF800A9DF61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E420AB22445CF800A9DF61 /* ViewController.swift */; };
 		40E420AF22445CF800A9DF61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40E420AD22445CF800A9DF61 /* Main.storyboard */; };
@@ -15,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4072CDDE22720048007F40B6 /* toastieTheToaster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = toastieTheToaster.jpg; sourceTree = SOURCE_ROOT; };
 		40E420A622445CF800A9DF61 /* Toastie The Toaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toastie The Toaster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E420A922445CF800A9DF61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40E420AB22445CF800A9DF61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		40E420B022445CFC00A9DF61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40E420B322445CFC00A9DF61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40E420B522445CFC00A9DF61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D7266838A136962909DA99F /* Pods-Toastie The Toaster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toastie The Toaster.release.xcconfig"; path = "Target Support Files/Pods-Toastie The Toaster/Pods-Toastie The Toaster.release.xcconfig"; sourceTree = "<group>"; };
+		96994EA38D6CEC8A9452E5DF /* Pods_Toastie_The_Toaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Toastie_The_Toaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDEC29BD09BE88C179E2C958 /* Pods-Toastie The Toaster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toastie The Toaster.debug.xcconfig"; path = "Target Support Files/Pods-Toastie The Toaster/Pods-Toastie The Toaster.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F3EE4F4A3B022CC9D08074C /* Pods_Toastie_The_Toaster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				40E420A822445CF800A9DF61 /* Toastie The Toaster */,
 				40E420A722445CF800A9DF61 /* Products */,
+				A82E605BA08D124C96167446 /* Pods */,
+				9D6AFD872E47722DF0034DC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				40E420B022445CFC00A9DF61 /* Assets.xcassets */,
 				40E420B222445CFC00A9DF61 /* LaunchScreen.storyboard */,
 				40E420B522445CFC00A9DF61 /* Info.plist */,
+				4072CDDE22720048007F40B6 /* toastieTheToaster.jpg */,
 			);
 			path = "Toastie The Toaster";
+			sourceTree = "<group>";
+		};
+		9D6AFD872E47722DF0034DC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96994EA38D6CEC8A9452E5DF /* Pods_Toastie_The_Toaster.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A82E605BA08D124C96167446 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDEC29BD09BE88C179E2C958 /* Pods-Toastie The Toaster.debug.xcconfig */,
+				4D7266838A136962909DA99F /* Pods-Toastie The Toaster.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40E420B822445CFC00A9DF61 /* Build configuration list for PBXNativeTarget "Toastie The Toaster" */;
 			buildPhases = (
+				5A39BC7255EC620994A47194 /* [CP] Check Pods Manifest.lock */,
 				40E420A222445CF800A9DF61 /* Sources */,
 				40E420A322445CF800A9DF61 /* Frameworks */,
 				40E420A422445CF800A9DF61 /* Resources */,
+				B43497D6800E6668C4ED940E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4072CDDF22720048007F40B6 /* toastieTheToaster.jpg in Resources */,
 				40E420B422445CFC00A9DF61 /* LaunchScreen.storyboard in Resources */,
 				40E420B122445CFC00A9DF61 /* Assets.xcassets in Resources */,
 				40E420AF22445CF800A9DF61 /* Main.storyboard in Resources */,
@@ -129,6 +159,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A39BC7255EC620994A47194 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Toastie The Toaster-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B43497D6800E6668C4ED940E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Toastie The Toaster/Pods-Toastie The Toaster-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Toastie The Toaster/Pods-Toastie The Toaster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		40E420A222445CF800A9DF61 /* Sources */ = {
@@ -280,10 +357,15 @@
 		};
 		40E420B922445CFC00A9DF61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDEC29BD09BE88C179E2C958 /* Pods-Toastie The Toaster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HKXG2MJJVF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftSocket\"",
+				);
 				INFOPLIST_FILE = "Toastie The Toaster/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,10 +380,15 @@
 		};
 		40E420BA22445CFC00A9DF61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D7266838A136962909DA99F /* Pods-Toastie The Toaster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HKXG2MJJVF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftSocket\"",
+				);
 				INFOPLIST_FILE = "Toastie The Toaster/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
